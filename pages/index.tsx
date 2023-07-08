@@ -99,7 +99,7 @@ export default function Home() {
               <Heading textAlign ='left' color="purple">Looshus</Heading>
               <Text color='orange' variant='sub-heading'>Channel Surfer</Text>
             <Text textAlign='right'>
-              <Link variant='learn' color='red'>></Link>
+              <Link variant='learn' color='red'>{'>'}</Link>
             </Text>
           </Stack>
           </CardBody>
@@ -124,7 +124,7 @@ export default function Home() {
           <Heading textAlign='left' color="purple">Qaivy</Heading>
           <Text color='orange' variant='sub-heading'>The Old Guy</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>
       </Stack>
       </CardBody>
@@ -149,7 +149,7 @@ export default function Home() {
           <Heading textAlign='left' color="purple">Wala</Heading>
           <Text color='orange' variant='sub-heading'>Sir Roland</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>
       </Stack>
       </CardBody>
@@ -173,7 +173,7 @@ export default function Home() {
           <Heading textAlign="left" color="purple">Zayniel</Heading>
           <Text color='orange' variant='sub-heading'>Edgelord</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>      
       </Stack>
       </CardBody>
@@ -205,7 +205,7 @@ export default function Home() {
               <Heading textAlign ='left' color="purple">Mcnot</Heading>
               <Text color='orange' variant='sub-heading'>Jeff</Text>
             <Text textAlign='right'>
-              <Link variant='learn' color='red'>></Link>
+              <Link variant='learn' color='red'>{'>'}</Link>
             </Text>
           </Stack>
           </CardBody>
@@ -230,7 +230,7 @@ export default function Home() {
           <Heading textAlign='left' color="purple">Cintreuse</Heading>
           <Text color='orange' variant='sub-heading'>Brandon</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>
       </Stack>
       </CardBody>
@@ -255,7 +255,7 @@ export default function Home() {
           <Heading textAlign='left' color="purple">Ciashed</Heading>
           <Text color='orange' variant='sub-heading'>Jummy</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>
       </Stack>
       </CardBody>
@@ -279,7 +279,7 @@ export default function Home() {
           <Heading textAlign="left" color="purple">MindiiBin</Heading>
           <Text color='orange' variant='sub-heading'>Mr. Anderson</Text>
           <Text textAlign='right'>
-            <Link variant='learn' color='red'>></Link>
+            <Link variant='learn' color='red'>{'>'}</Link>
           </Text>      
       </Stack>
       </CardBody>
