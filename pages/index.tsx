@@ -246,7 +246,7 @@ export default function Home() {
       <Stack>
       <Image
         objectFit='cover'
-        src='./james.JPG'
+        src='./james.jpg'
         alt='james'
         boxSize='300px'
         h='200px'
