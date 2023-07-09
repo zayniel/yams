@@ -7,6 +7,12 @@ body {
   background-color: #fdffff;
 }
 
+.grid-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Stoked";
   src: url("../src/fonts/Stoked/stoked.ttf");

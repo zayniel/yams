@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import * as React from 'react'
+import * as React from 'react';
+import NextLink from 'next/link';
 import {
   ChakraProvider,
   Card,  
-  CardHeader,
   CardBody,
   Heading,
   Grid,
@@ -11,11 +11,11 @@ import {
   Stack,
   Text,
   LightMode,
-  GridItem,
   extendTheme,
   Link,
-  Box,
+  IconButton,
 } from '@chakra-ui/react'
+import { ArrowRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout';
 import Fonts from '../components/Fonts'
 
@@ -26,6 +26,13 @@ const colors = {
 }
 
 const theme = extendTheme ({
+  styles: {
+    global: (props) => ({
+      body: {
+        bg: 'white',
+      }
+    })
+  },
   fonts: {
     heading: "Ikaros",
     body: "Ikaros",
@@ -47,8 +54,12 @@ const theme = extendTheme ({
     },
     Link: {
       variants: {
-        'learn': {
-          fontSize: 30,
+        'learn-more': {
+          fontSize: "30px",
+
+          _hover: {
+            transform: "scale(1.1)",
+          }
         }
       }
     }
@@ -60,12 +71,10 @@ export default function Home() {
 
   return (
     <ChakraProvider theme={theme}>
-      
+      <LightMode>
     <Layout>
-
     <Fonts/>
-
-    <LightMode>
+    
     <Head>
       <title>YAMS Incorporated</title>
     </Head>
@@ -78,7 +87,8 @@ export default function Home() {
       <h2>Co-Founders</h2>
     </div>
 
-    <Grid pb='100px' px='150px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={5}>
+<div className='grid-container'>
+    <Grid pb='100px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={20}>
       
         <Card 
           overflow='hidden'
@@ -97,10 +107,16 @@ export default function Home() {
             objectFit='cover'
             />
               <Heading textAlign ='left' color="purple">Looshus</Heading>
-              <Text color='orange' variant='sub-heading'>Channel Surfer</Text>
-            <Text textAlign='right'>
-              <Link variant='learn' color='red'>{'>'}</Link>
-            </Text>
+              <Text color='orange' variant='sub-heading'>Lucius Padaoan</Text>
+                <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Lucius'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
           </Stack>
           </CardBody>
         </Card>
@@ -122,10 +138,16 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign='left' color="purple">Qaivy</Heading>
-          <Text color='orange' variant='sub-heading'>The Old Guy</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>
+          <Text color='orange' variant='sub-heading'>Ben Stier</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Ben'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
       </Stack>
       </CardBody>
     </Card>
@@ -147,10 +169,16 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign='left' color="purple">Wala</Heading>
-          <Text color='orange' variant='sub-heading'>Sir Roland</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>
+          <Text color='orange' variant='sub-heading'>Riley Martinson</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Riley'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
       </Stack>
       </CardBody>
     </Card>
@@ -171,20 +199,28 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign="left" color="purple">Zayniel</Heading>
-          <Text color='orange' variant='sub-heading'>Edgelord</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>      
+          <Text color='orange' variant='sub-heading'>Zayne Pepin</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Zayne'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />    
       </Stack>
       </CardBody>
     </Card>
     </Grid>
+    </div>
 
     <div className="Title-Sub">
       <h2>Honorary Members</h2>
     </div>
 
-    <Grid pb='100px' px='150px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={5}>
+    <div className='grid-container'>
+    <Grid pb='100px' px='150px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={20}>
       
         <Card 
           overflow='hidden'
@@ -203,10 +239,16 @@ export default function Home() {
             objectFit='cover'
             />
               <Heading textAlign ='left' color="purple">Mcnot</Heading>
-              <Text color='orange' variant='sub-heading'>Jeff</Text>
-            <Text textAlign='right'>
-              <Link variant='learn' color='red'>{'>'}</Link>
-            </Text>
+              <Text color='orange' variant='sub-heading'>Zach Roberts</Text>
+              <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Zach'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
           </Stack>
           </CardBody>
         </Card>
@@ -228,10 +270,16 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign='left' color="purple">Cintreuse</Heading>
-          <Text color='orange' variant='sub-heading'>Brandon</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>
+          <Text color='orange' variant='sub-heading'>Brayden Huffman</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Brayden'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
       </Stack>
       </CardBody>
     </Card>
@@ -253,10 +301,16 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign='left' color="purple">Ciashed</Heading>
-          <Text color='orange' variant='sub-heading'>Jummy</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>
+          <Text color='orange' variant='sub-heading'>James Peacock</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Jimmy'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />
       </Stack>
       </CardBody>
     </Card>
@@ -277,17 +331,24 @@ export default function Home() {
         borderRadius='lg'
         />
           <Heading textAlign="left" color="purple">MindiiBin</Heading>
-          <Text color='orange' variant='sub-heading'>Mr. Anderson</Text>
-          <Text textAlign='right'>
-            <Link variant='learn' color='red'>{'>'}</Link>
-          </Text>      
+          <Text color='orange' variant='sub-heading'>Hunter Anderson</Text>
+          <IconButton aria-label='Learn More' 
+                  as={NextLink} href='/Hunter'
+                  borderRadius='lg'
+                  color='red'
+                  size='lg'
+                  variant='outline'
+                  colorScheme='red'
+                  icon={<ArrowRightIcon />} 
+                />  
       </Stack>
       </CardBody>
     </Card>
     </Grid>
-
-    </LightMode>
+    </div>
+    
     </Layout>
+    </LightMode>
     </ChakraProvider>
   );
 }

@@ -6,14 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/node": "20.4.0",
+    "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^10.12.18",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^6.14.1",
     "typescript": "5.1.6"
   },
   "devDependencies": {
