@@ -106,8 +106,8 @@ export default function Home() {
             h='200px'
             objectFit='cover'
             />
-              <Heading textAlign ='left' color="purple">Looshus</Heading>
-              <Text color='orange' variant='sub-heading'>Lucius Padaoan</Text>
+              <Heading textAlign ='left' color="red">Looshus</Heading>
+              <Text color='black' variant='sub-heading'>Lucius Padaoan</Text>
                 <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Lucius'
                   borderRadius='lg'
@@ -137,8 +137,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign='left' color="purple">Qaivy</Heading>
-          <Text color='orange' variant='sub-heading'>Ben Stier</Text>
+          <Heading textAlign='left' color="red">Qaivy</Heading>
+          <Text color='black' variant='sub-heading'>Ben Stier</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Ben'
                   borderRadius='lg'
@@ -168,8 +168,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign='left' color="purple">Wala</Heading>
-          <Text color='orange' variant='sub-heading'>Riley Martinson</Text>
+          <Heading textAlign='left' color="red">Wala</Heading>
+          <Text color='black' variant='sub-heading'>Riley Martinson</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Riley'
                   borderRadius='lg'
@@ -198,8 +198,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign="left" color="purple">Zayniel</Heading>
-          <Text color='orange' variant='sub-heading'>Zayne Pepin</Text>
+          <Heading textAlign="left" color="red">Zayniel</Heading>
+          <Text color='black' variant='sub-heading'>Zayne Pepin</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Zayne'
                   borderRadius='lg'
@@ -238,8 +238,8 @@ export default function Home() {
             h='200px'
             objectFit='cover'
             />
-              <Heading textAlign ='left' color="purple">Mcnot</Heading>
-              <Text color='orange' variant='sub-heading'>Zach Roberts</Text>
+              <Heading textAlign ='left' color="red">Mcnot</Heading>
+              <Text color='black' variant='sub-heading'>Zach Roberts</Text>
               <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Zach'
                   borderRadius='lg'
@@ -269,8 +269,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign='left' color="purple">Cintreuse</Heading>
-          <Text color='orange' variant='sub-heading'>Brayden Huffman</Text>
+          <Heading textAlign='left' color="red">Cintreuse</Heading>
+          <Text color='black' variant='sub-heading'>Brayden Huffman</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Brayden'
                   borderRadius='lg'
@@ -300,8 +300,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign='left' color="purple">Ciashed</Heading>
-          <Text color='orange' variant='sub-heading'>James Peacock</Text>
+          <Heading textAlign='left' color="red">Ciashed</Heading>
+          <Text color='black' variant='sub-heading'>James Peacock</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Jimmy'
                   borderRadius='lg'
@@ -330,8 +330,8 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign="left" color="purple">MindiiBin</Heading>
-          <Text color='orange' variant='sub-heading'>Hunter Anderson</Text>
+          <Heading textAlign="left" color="red">MindiiBin</Heading>
+          <Text color='black' variant='sub-heading'>Hunter Anderson</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Hunter'
                   borderRadius='lg'

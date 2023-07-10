@@ -9,6 +9,11 @@ import {
     Card,
     CardHeader,
     LightMode,
+    CardBody,
+    Divider,
+    Center,
+    Text,
+    Heading
 } from '@chakra-ui/react'
 
 const colors = {
@@ -31,7 +36,16 @@ const theme = extendTheme ({
     },
     colors,
     components: {
-        
+        Text: {
+            variants: {
+                'sub-heading': {
+                    fontSize: 30,
+                },
+                'bio': {
+                    fontSize: 22
+                }
+            }
+        }
     }
 })
 
@@ -40,16 +54,82 @@ export default function Home() {
         <ChakraProvider theme={theme}>
         <LightMode>
         
-        <Grid pt='10' templateColumns='repeat(3, 1fr)' templateRows='repeat(2, 1fr)' gap={20}>
-            <GridItem rowSpan={2}>
+        <Grid px='80px' pt='30px' templateColumns='repeat(3, 1fr)' templateRows='repeat(2, 1fr)' gap={20}>
+            <GridItem colStart={1} rowSpan={2}>
+            <Center>
+            <Image
+                src='./val.png'
+                h='200px'
+                w='500px'
+                objectFit='cover'
+                
+            />
+            </Center>
+            <Stack mt='20px' spacing='50px'>
+                <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    align='center'
+                    maxH='300px'
+                >   
                     <Image
-                        src='./skye.png'
+                        src='./sova.png'
                         objectFit='cover'
-                        transform='scaleX(-1)'
+                        h='400px'
+                        w='50%'
+                        objectPosition='0% 60px'
                         
-                    />
+                    />  
+                    <CardBody fontSize='xl' textAlign='center'>
+                        <Text color='red'>Time Played</Text>
+                        <Divider/>
+                        159 Hours
+                        <br></br><br></br>
+                        <Text color='red'>Win Rate</Text>
+                        <Divider/>
+                        54.3%
+                        <br></br><br></br>
+                        <Text color='red'>K/D</Text>
+                        <Divider/>
+                        1.17
+                    </CardBody>  
+                </Card>
+                <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    align='center'
+                    maxH='300px'
+                >
+                <Image
+                    src='./skye.png'
+                    objectFit='cover'
+                    h='400px'
+                    w='50%'
+                    transform='scaleX(-1)'
+                    objectPosition='0% 60px'
+                />
+                <CardBody fontSize='xl' textAlign='center'>
+                    <Text color='red'>Time Played</Text>
+                        <Divider/>
+                        25 Hours
+                        <br></br><br></br>
+                        <Text color='red'>Win Rate</Text>
+                        <Divider/>
+                        28.3%
+                        <br></br><br></br>
+                        <Text color='red'>K/D</Text>
+                        <Divider/>
+                        1.05
+                    </CardBody>
+                </Card>
+            </Stack>
             </GridItem>
-            <Card pt='10' alignItems='center' textAlign='center' variant='ghost'>
+            <GridItem rowSpan={2}>
+            <Card h='100%' borderRadius='lg' pt='30px' px='30px' alignItems='center' textAlign='center' variant='outline' boxShadow='2xl'>
                 <Image
                     src='./lu-pic.jpg'
                     borderRadius='xl'
@@ -58,21 +138,88 @@ export default function Home() {
                     objectFit='cover'
                     objectPosition='0 20%'
                 />
-                <CardHeader fontSize='8xl' color='red'>
-                    Looshus
-                </CardHeader>
+                <CardBody>
+                    <Heading fontSize='7xl' color='red'>Looshus</Heading>
+                    <Text variant='sub-heading'>Real Name: Lucius Padaoan</Text>
+                    <br></br>
+                    <Divider/>
+                    <br></br>
+                    <Text variant='bio'>bio / random facts to be added</Text>
+                </CardBody>
             </Card>
+            </GridItem>
             <GridItem colStart={3} rowSpan={2}>
-            <Stack mt='10' spacing='60px'>
-                <Image
-                    src='./thresh.png'
-                    objectFit='cover'
-                />    
+            <Center>
+            <Image
+                src='./lol.png'
+                h='90px'
+                w='90px'
+            />
+            <Image 
+                src='./leaguetitle.png'
+                h='200px'
+                w='300px'
+                objectFit='cover'
+                aspectRatio='auto'
+            /> 
+            </Center>
+            <Stack mt='20px' spacing='50px'>
+                <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    bgImage='./thresh.png'
+                    align='center'
+                >   
+                    <CardBody fontSize='xl' textAlign='center'>
+                        <Text color='red'>Mastery</Text>
+                        <Divider/>
+                        362,601
+                        <br></br><br></br>
+                        <Text color='red'>Win Rate</Text>
+                        <Divider/>
+                        40.0%
+                        <br></br><br></br>
+                        <Text color='red'>Average K/D/A</Text>
+                        <Divider/>
+                        2.0 / 3.3 / 21.3
+                    </CardBody>
+                    <Image
+                        src='./thresh.png'
+                        objectFit='cover'
+                        h='300px'
+                        w='50%'
+                    />    
+                </Card>
+                <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    align='center'
+                >
+                    <CardBody fontSize='xl' textAlign='center'>
+                    <Text color='red'>Mastery</Text>
+                        <Divider/>
+                        121,186
+                        <br></br><br></br>
+                        <Text color='red'>Win Rate</Text>
+                        <Divider/>
+                        60.0%
+                        <br></br><br></br>
+                        <Text color='red'>Average K/D/A</Text>
+                        <Divider/>
+                        5.2 / 3.4 / 8.4
+                    </CardBody>
                 <Image
                     src='./pyke.png'
                     objectFit='cover'
-                    
+                    h='300px'
+                    w='50%'
+                    objectPosition='-90px'
                 />
+                </Card>
             </Stack>
             </GridItem>
         </Grid>
