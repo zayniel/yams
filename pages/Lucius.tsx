@@ -14,7 +14,8 @@ import {
     Divider,
     Center,
     Text,
-    HStack
+    HStack,
+    Heading
 } from '@chakra-ui/react'
 
 const colors = {
@@ -144,12 +145,9 @@ export default function Home() {
                     objectFit='cover'
                     objectPosition='0 20%'
                 />
-                <CardBody mt='30px'>
-                    <HStack>
-                        <Text fontSize='3xl'>Lucius</Text>
-                        <Text fontSize='5xl' color='red' fontWeight='semibold'>'Looshus'</Text>
-                        <Text fontSize='3xl'>Padaoan</Text>
-                    </HStack>
+                <CardBody mt='10px'>
+                <Heading fontSize='7xl' color='red'>Looshus</Heading>
+                    <Text fontSize='2xl'>Lucius Padaoan</Text>
                     <br></br>
                     <Divider/>
                     <br></br>
