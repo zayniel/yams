@@ -128,8 +128,8 @@ export default function Home() {
                 </Card>
             </Stack>
             </GridItem>
-            <GridItem rowSpan={2}>
-            <Card h='100%' borderRadius='lg' pt='30px' px='30px' alignItems='center' textAlign='center' variant='outline' boxShadow='2xl'>
+            <GridItem>
+            <Card borderRadius='lg' mt='20px' pt='30px' px='30px' h='500px' align='center' textAlign='center' variant='outline' boxShadow='2xl'>
                 <Image
                     src='./lu-pic.jpg'
                     borderRadius='xl'
@@ -138,16 +138,21 @@ export default function Home() {
                     objectFit='cover'
                     objectPosition='0 20%'
                 />
-                <CardBody>
+                <CardBody mt='40px'>
                     <Heading fontSize='7xl' color='red'>Looshus</Heading>
                     <Text variant='sub-heading'>Real Name: Lucius Padaoan</Text>
-                    <br></br>
-                    <Divider/>
-                    <br></br>
-                    <Text variant='bio'>bio / random facts to be added</Text>
                 </CardBody>
             </Card>
             </GridItem>
+
+            <GridItem colStart={2} rowStart={2}>
+                <Card mt='-30px' mb='0' h='300px' variant='outline' textAlign='center' boxShadow='2xl'>
+                    <CardBody>
+                        * Area for clips to be embedded *
+                    </CardBody>
+                </Card>
+            </GridItem>
+
             <GridItem colStart={3} rowSpan={2}>
             <Center>
             <Image
