@@ -29,7 +29,7 @@ const theme = extendTheme ({
   styles: {
     global: (props) => ({
       body: {
-        bg: 'white',
+        bgGradient: 'linear(to-t, #E2E8F0, white)'
       }
     })
   },
@@ -88,7 +88,7 @@ export default function Home() {
     </div>
 
 <div className='grid-container'>
-    <Grid pb='100px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={20}>
+    <Grid pb='100px' templateColumns='repeat(4, 1fr)' gap={20}>
       
         <Card 
           overflow='hidden'
@@ -220,7 +220,7 @@ export default function Home() {
     </div>
 
     <div className='grid-container'>
-    <Grid pb='100px' px='150px' bgColor="white" templateColumns='repeat(4, 1fr)' gap={20}>
+    <Grid pb='100px' px='150px'templateColumns='repeat(4, 1fr)' gap={20}>
       
         <Card 
           overflow='hidden'

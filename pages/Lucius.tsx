@@ -15,7 +15,8 @@ import {
     Center,
     Text,
     HStack,
-    Heading
+    Heading,
+    DarkMode
 } from '@chakra-ui/react'
 
 const colors = {
@@ -28,7 +29,7 @@ const theme = extendTheme ({
     styles: {
         global: (props) => ({
             body: {
-                bg: 'white'
+                bgGradient: 'linear(to-t, #E2E8F0, white)'
             }
         })
     },
