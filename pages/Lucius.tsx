@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Head from 'next/head'
 import { 
     Image,
     Grid, 
@@ -52,6 +53,11 @@ const theme = extendTheme ({
 export default function Home() {
     return (
         <ChakraProvider theme={theme}>
+
+        <Head>
+            <title>About Lucius</title>
+        </Head>
+
         <LightMode>
         
         <Grid px='80px' pt='30px' templateColumns='repeat(3, 1fr)' templateRows='repeat(2, 1fr)' gap={20}>
@@ -157,15 +163,15 @@ export default function Home() {
             <Center>
             <Image
                 src='./lol.png'
-                h='90px'
-                w='90px'
+                objectFit='cover'
+                h='80px'
+                w='80px'
             />
             <Image 
                 src='./leaguetitle.png'
                 h='200px'
                 w='300px'
                 objectFit='cover'
-                aspectRatio='auto'
             /> 
             </Center>
             <Stack mt='20px' spacing='50px'>
@@ -176,6 +182,7 @@ export default function Home() {
                     boxShadow='2xl'
                     bgImage='./thresh.png'
                     align='center'
+                    maxH='300px'
                 >   
                     <CardBody fontSize='xl' textAlign='center'>
                         <Text color='red'>Mastery</Text>
@@ -203,6 +210,7 @@ export default function Home() {
                     variant='outline'
                     boxShadow='2xl'
                     align='center'
+                    maxH='300px'
                 >
                     <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>Mastery</Text>
