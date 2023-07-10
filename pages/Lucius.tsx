@@ -14,7 +14,7 @@ import {
     Divider,
     Center,
     Text,
-    Heading
+    HStack
 } from '@chakra-ui/react'
 
 const colors = {
@@ -40,7 +40,7 @@ const theme = extendTheme ({
         Text: {
             variants: {
                 'sub-heading': {
-                    fontSize: 30,
+                    fontSize: 22,
                 },
                 'bio': {
                     fontSize: 22
@@ -144,9 +144,16 @@ export default function Home() {
                     objectFit='cover'
                     objectPosition='0 20%'
                 />
-                <CardBody mt='40px'>
-                    <Heading fontSize='7xl' color='red'>Looshus</Heading>
-                    <Text variant='sub-heading'>Real Name: Lucius Padaoan</Text>
+                <CardBody mt='30px'>
+                    <HStack>
+                        <Text fontSize='3xl'>Lucius</Text>
+                        <Text fontSize='5xl' color='red' fontWeight='semibold'>'Looshus'</Text>
+                        <Text fontSize='3xl'>Padaoan</Text>
+                    </HStack>
+                    <br></br>
+                    <Divider/>
+                    <br></br>
+                    <Text variant='sub-heading'>Roles: Support/Initiator</Text>
                 </CardBody>
             </Card>
             </GridItem>
