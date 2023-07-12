@@ -220,7 +220,7 @@ export default function Home() {
     </div>
 
     <div className='grid-container'>
-    <Grid pb='100px' px='150px'templateColumns='repeat(4, 1fr)' gap={20}>
+    <Grid pb='100px'templateColumns='repeat(4, 1fr)' gap={20}>
       
         <Card 
           overflow='hidden'

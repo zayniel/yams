@@ -57,7 +57,7 @@ export default function Home() {
         <ChakraProvider theme={theme}>
 
         <Head>
-            <title>About Lucius</title>
+            <title>About Ben</title>
         </Head>
 
         <LightMode>
@@ -83,25 +83,25 @@ export default function Home() {
                     maxH='300px'
                 >   
                     <Image
-                        src='./sova.png'
+                        src='./brim.png'
                         objectFit='cover'
                         h='400px'
                         w='50%'
-                        objectPosition='0% 60px'
+                        objectPosition='50% 40px'
                         
                     />  
                     <CardBody fontSize='xl' textAlign='center'>
                         <Text color='red'>Time Played</Text>
                         <Divider/>
-                        159 Hours
+                        20 Hours
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        54.3%
+                        45.0%
                         <br></br><br></br>
                         <Text color='red'>K/D</Text>
                         <Divider/>
-                        1.17
+                        0.90
                     </CardBody>  
                 </Card>
                 <Card
@@ -113,25 +113,24 @@ export default function Home() {
                     maxH='300px'
                 >
                 <Image
-                    src='./skye.png'
+                    src='./phoenix.png'
                     objectFit='cover'
                     h='400px'
                     w='50%'
-                    transform='scaleX(-1)'
-                    objectPosition='0% 60px'
+                    objectPosition='0% 80px'
                 />
                 <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>Time Played</Text>
                         <Divider/>
-                        25 Hours
+                        11 Hours
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        28.3%
+                        63.6%
                         <br></br><br></br>
                         <Text color='red'>K/D</Text>
                         <Divider/>
-                        1.05
+                        1.07
                     </CardBody>
                 </Card>
             </Stack>
@@ -139,20 +138,20 @@ export default function Home() {
             <GridItem>
             <Card borderRadius='lg' mt='20px' pt='30px' px='30px' h='500px' align='center' textAlign='center' variant='outline' boxShadow='2xl'>
                 <Image
-                    src='./lu-pic.jpg'
+                    src='./ben.jpg'
                     borderRadius='xl'
                     boxSize='450px'
                     h='200px'
                     objectFit='cover'
-                    objectPosition='0 20%'
+                    objectPosition='0 30%'
                 />
                 <CardBody mt='10px'>
-                <Heading fontSize='7xl' color='red'>Looshus</Heading>
-                    <Text fontSize='2xl'>Lucius Padaoan</Text>
+                <Heading fontSize='7xl' color='red'>Qaivy</Heading>
+                    <Text fontSize='2xl'>Ben Stier</Text>
                     <br></br>
                     <Divider/>
                     <br></br>
-                    <Text variant='sub-heading'>Roles: Initiator/Support</Text>
+                    <Text variant='sub-heading'>Roles: Control/Jungle</Text>
                 </CardBody>
             </Card>
             </GridItem>
@@ -161,12 +160,12 @@ export default function Home() {
                 <Card mt='-30px' mb='0' h='300px' variant='outline' textAlign='center' boxShadow='2xl'>
                     <CardBody>
                     <iframe 
-                        width="100%" 
-                        height="100%" 
-                        src="https://www.youtube.com/embed/08KVJkCyBaE" 
-                        title="Yammy Collection Vol. 1" 
+                        width='100%' 
+                        height='100%' 
+                        src="https://www.youtube.com/embed/xupn2Z56v04" 
+                        title="Of Mice and Men - English Project" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    />
+                        />
                     </CardBody>
                 </Card>
             </GridItem>
@@ -192,28 +191,28 @@ export default function Home() {
                     overflow='hidden'
                     variant='outline'
                     boxShadow='2xl'
-                    bgImage='./thresh.png'
                     align='center'
                     maxH='300px'
                 >   
                     <CardBody fontSize='xl' textAlign='center'>
                         <Text color='red'>Mastery</Text>
                         <Divider/>
-                        362,601
+                        20,310
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        40.0%
+                        50.0%
                         <br></br><br></br>
                         <Text color='red'>Average K/D/A</Text>
                         <Divider/>
-                        2.0 / 3.3 / 21.3
+                        2.0 / 3.5 / 5.0
                     </CardBody>
                     <Image
-                        src='./thresh.png'
+                        src='./voli.png'
                         objectFit='cover'
                         h='300px'
                         w='50%'
+                        objectPosition='40% 20px'
                     />    
                 </Card>
                 <Card
@@ -223,26 +222,31 @@ export default function Home() {
                     boxShadow='2xl'
                     align='center'
                     maxH='300px'
+                    /*
+                    bgImage='./urgot.png'
+                    backgroundSize='600px'
+                    backgroundRepeat='no-repeat'
+                    bgPosition='100px 0px'
+                    */
                 >
                     <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>Mastery</Text>
                         <Divider/>
-                        121,186
+                        10,403
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        60.0%
+                        50.0%
                         <br></br><br></br>
                         <Text color='red'>Average K/D/A</Text>
                         <Divider/>
-                        5.2 / 3.4 / 8.4
+                        4.0 / 5.0 / 6.2
                     </CardBody>
                 <Image
-                    src='./pyke.png'
+                    src='./urgot.png'
                     objectFit='cover'
                     h='300px'
                     w='50%'
-                    objectPosition='-90px'
                 />
                 </Card>
             </Stack>
