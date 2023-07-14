@@ -57,7 +57,7 @@ export default function Home() {
         <ChakraProvider theme={theme}>
 
         <Head>
-            <title>About Ben</title>
+            <title>About Riley</title>
         </Head>
 
         <LightMode>
@@ -83,25 +83,25 @@ export default function Home() {
                     maxH='300px'
                 >   
                     <Image
-                        src='./brim.png'
+                        src='./omen.png'
                         objectFit='cover'
                         h='400px'
                         w='50%'
-                        objectPosition='50% 40px'
+                        objectPosition='45% 30px'
                         
                     />  
                     <CardBody fontSize='xl' textAlign='center'>
                         <Text color='red'>Time Played</Text>
                         <Divider/>
-                        20 Hours
+                        55 Hours
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        45.0%
+                        50.5%
                         <br></br><br></br>
                         <Text color='red'>K/D</Text>
                         <Divider/>
-                        0.90
+                        1.05
                     </CardBody>  
                 </Card>
                 <Card
@@ -113,24 +113,24 @@ export default function Home() {
                     maxH='300px'
                 >
                 <Image
-                    src='./phoenix.png'
+                    src='./astra.png'
                     objectFit='cover'
                     h='400px'
                     w='50%'
-                    objectPosition='50% 80px'
+                    objectPosition='50% 60px'
                 />
                 <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>Time Played</Text>
                         <Divider/>
-                        11 Hours
+                        32 Hours
                         <br></br><br></br>
                         <Text color='red'>Win Rate</Text>
                         <Divider/>
-                        63.6%
+                        44.6%
                         <br></br><br></br>
                         <Text color='red'>K/D</Text>
                         <Divider/>
-                        1.07
+                        0.98
                     </CardBody>
                 </Card>
             </Stack>
@@ -138,20 +138,20 @@ export default function Home() {
             <GridItem>
             <Card borderRadius='lg' mt='20px' pt='30px' px='30px' h='500px' align='center' textAlign='center' variant='outline' boxShadow='2xl'>
                 <Image
-                    src='./ben.jpg'
+                    src='./riley.jpg'
                     borderRadius='xl'
                     boxSize='450px'
                     h='200px'
                     objectFit='cover'
-                    objectPosition='0 30%'
+                    objectPosition='50% 30%'
                 />
                 <CardBody mt='10px'>
-                <Heading fontSize='7xl' color='red'>Qaivy</Heading>
-                    <Text fontSize='2xl'>Ben Stier</Text>
+                <Heading fontSize='7xl' color='red'>Tiwala</Heading>
+                    <Text fontSize='2xl'>Riley Martinson</Text>
                     <br></br>
                     <Divider/>
                     <br></br>
-                    <Text variant='sub-heading'>Roles: Control/Jungle</Text>
+                    <Text variant='sub-heading'>Role: Controller</Text>
                 </CardBody>
             </Card>
             </GridItem>
@@ -159,13 +159,7 @@ export default function Home() {
             <GridItem colStart={2} rowStart={2}>
                 <Card mt='-30px' mb='0' h='300px' variant='outline' textAlign='center' boxShadow='2xl'>
                     <CardBody>
-                    <iframe 
-                        width='100%' 
-                        height='100%' 
-                        src="https://www.youtube.com/embed/xupn2Z56v04" 
-                        title="Of Mice and Men - English Project" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        />
+                    
                     </CardBody>
                 </Card>
             </GridItem>
@@ -173,17 +167,11 @@ export default function Home() {
             <GridItem colStart={3} rowSpan={2}>
             <Center>
             <Image
-                src='./lol.png'
+                src='./apex.png'
                 objectFit='cover'
-                h='80px'
-                w='80px'
-            />
-            <Image 
-                src='./leaguetitle.png'
                 h='200px'
-                w='300px'
-                objectFit='cover'
-            /> 
+                w='400px'
+            />
             </Center>
             <Stack mt='20px' spacing='50px'>
                 <Card
@@ -195,20 +183,20 @@ export default function Home() {
                     maxH='300px'
                 >   
                     <CardBody fontSize='xl' textAlign='center'>
-                        <Text color='red'>Mastery</Text>
+                    <Text color='red'>BR Kills</Text>
                         <Divider/>
-                        20,310
+                        1,259
                         <br></br><br></br>
-                        <Text color='red'>Win Rate</Text>
+                        <Text color='red'>Gravity lift: Teammates lifted</Text>
                         <Divider/>
-                        50.0%
+                        837
                         <br></br><br></br>
-                        <Text color='red'>Average K/D/A</Text>
+                        <Text color='red'>BR Damage</Text>
                         <Divider/>
-                        2.0 / 3.5 / 5.0
+                        529,624
                     </CardBody>
                     <Image
-                        src='./voli.png'
+                        src='./horizon.png'
                         objectFit='cover'
                         h='300px'
                         w='50%'
@@ -222,32 +210,26 @@ export default function Home() {
                     boxShadow='2xl'
                     align='center'
                     maxH='300px'
-                    /*
-                    bgImage='./urgot.png'
-                    backgroundSize='600px'
-                    backgroundRepeat='no-repeat'
-                    bgPosition='100px 0px'
-                    */
                 >
                     <CardBody fontSize='xl' textAlign='center'>
-                    <Text color='red'>Mastery</Text>
+                    <Text color='red'>BR Kills</Text>
                         <Divider/>
-                        10,403
+                        779
                         <br></br><br></br>
-                        <Text color='red'>Win Rate</Text>
+                        <Text color='red'>BR Damage</Text>
                         <Divider/>
-                        50.0%
+                        361,917
                         <br></br><br></br>
-                        <Text color='red'>Average K/D/A</Text>
+                        <Text color='red'>BR Wins</Text>
                         <Divider/>
-                        4.0 / 5.0 / 6.2
+                        36
                     </CardBody>
                 <Image
-                    src='./urgot.png'
+                    src='./wraith.png'
                     objectFit='cover'
-                    h='300px'
+                    h='500px'
                     w='50%'
-                    objectPosition='50% 0px'
+                    objectPosition='50% 110px'
                 />
                 </Card>
             </Stack>

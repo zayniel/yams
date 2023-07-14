@@ -168,7 +168,7 @@ export default function Home() {
         h='200px'
         borderRadius='lg'
         />
-          <Heading textAlign='left' color="red">Wala</Heading>
+          <Heading textAlign='left' color="red">Tiwala</Heading>
           <Text color='black' variant='sub-heading'>Riley Martinson</Text>
           <IconButton aria-label='Learn More' 
                   as={NextLink} href='/Riley'

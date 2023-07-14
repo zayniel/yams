@@ -87,7 +87,7 @@ export default function Home() {
                         objectFit='cover'
                         h='400px'
                         w='50%'
-                        objectPosition='0% 60px'
+                        objectPosition='50% 60px'
                         
                     />  
                     <CardBody fontSize='xl' textAlign='center'>
@@ -118,7 +118,7 @@ export default function Home() {
                     h='400px'
                     w='50%'
                     transform='scaleX(-1)'
-                    objectPosition='0% 60px'
+                    objectPosition='50% 60px'
                 />
                 <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>Time Played</Text>
@@ -144,7 +144,7 @@ export default function Home() {
                     boxSize='450px'
                     h='200px'
                     objectFit='cover'
-                    objectPosition='0 20%'
+                    objectPosition='50% 20%'
                 />
                 <CardBody mt='10px'>
                 <Heading fontSize='7xl' color='red'>Looshus</Heading>
@@ -214,6 +214,7 @@ export default function Home() {
                         objectFit='cover'
                         h='300px'
                         w='50%'
+                        objectPosition='50%'
                     />    
                 </Card>
                 <Card
@@ -242,7 +243,7 @@ export default function Home() {
                     objectFit='cover'
                     h='300px'
                     w='50%'
-                    objectPosition='-90px'
+                    objectPosition='50%'
                 />
                 </Card>
             </Stack>
