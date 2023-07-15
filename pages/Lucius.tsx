@@ -16,8 +16,13 @@ import {
     Text,
     HStack,
     Heading,
-    DarkMode
+    DarkMode,
+    Box,
+    IconButton
 } from '@chakra-ui/react'
+import { ArrowLeftIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link';
+
 
 const colors = {
     orange: '#cc5500',
@@ -62,6 +67,21 @@ export default function Home() {
 
         <LightMode>
         
+        <Box position='fixed' left={5} top={5} zIndex={99}>
+        <IconButton 
+            aria-label='Learn More' 
+            as={NextLink} href='/'
+            borderRadius='lg'
+            color='white'
+            bgColor='#ff4454'
+            size='lg'
+            variant='outline'
+            colorScheme='red'
+            boxShadow='xl'
+            icon={<ArrowLeftIcon />}  
+            />
+        </Box>
+
         <Grid px='80px' pt='30px' templateColumns='repeat(3, 1fr)' templateRows='repeat(2, 1fr)' gap={20}>
             <GridItem colStart={1} rowSpan={2}>
             <Center>

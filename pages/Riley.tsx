@@ -16,8 +16,12 @@ import {
     Text,
     HStack,
     Heading,
-    DarkMode
+    DarkMode,
+    IconButton,
+    Box
 } from '@chakra-ui/react'
+import { ArrowLeftIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link';
 
 const colors = {
     orange: '#cc5500',
@@ -62,6 +66,21 @@ export default function Home() {
 
         <LightMode>
         
+        <Box position='fixed' left={5} top={5} zIndex={99}>
+        <IconButton 
+            aria-label='Learn More' 
+            as={NextLink} href='/'
+            borderRadius='lg'
+            color='white'
+            bgColor='#ff4454'
+            size='lg'
+            variant='outline'
+            colorScheme='red'
+            boxShadow='xl'
+            icon={<ArrowLeftIcon />}  
+            />
+        </Box>
+
         <Grid px='80px' pt='30px' templateColumns='repeat(3, 1fr)' templateRows='repeat(2, 1fr)' gap={20}>
             <GridItem colStart={1} rowSpan={2}>
             <Center>
@@ -145,8 +164,11 @@ export default function Home() {
                     objectFit='cover'
                     objectPosition='50% 30%'
                 />
-                <CardBody mt='10px'>
-                <Heading fontSize='7xl' color='red'>Tiwala</Heading>
+                <CardBody>
+                <Heading fontSize='7xl' color='red'>
+                    Tiwala
+                    </Heading>
+                
                     <Text fontSize='2xl'>Riley Martinson</Text>
                     <br></br>
                     <Divider/>
@@ -184,19 +206,19 @@ export default function Home() {
                 >   
                     <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>BR Kills</Text>
-                        <Divider/>
-                        1,259
-                        <br></br><br></br>
-                        <Text color='red'>Gravity lift: Teammates lifted</Text>
-                        <Divider/>
-                        837
+                    <Divider/>
+                        867
                         <br></br><br></br>
                         <Text color='red'>BR Damage</Text>
                         <Divider/>
-                        529,624
+                        329,586
+                        <br></br><br></br>
+                        <Text color='red'>Missile Swarm: Enemies hit</Text>
+                        <Divider/>
+                        516
                     </CardBody>
                     <Image
-                        src='./horizon.png'
+                        src='./valk.png'
                         objectFit='cover'
                         h='300px'
                         w='50%'
@@ -214,18 +236,18 @@ export default function Home() {
                     <CardBody fontSize='xl' textAlign='center'>
                     <Text color='red'>BR Kills</Text>
                         <Divider/>
-                        779
+                        208
                         <br></br><br></br>
-                        <Text color='red'>BR Damage</Text>
+                        <Text color='red'>Loot pinged through walls</Text>
                         <Divider/>
-                        361,917
+                        14
                         <br></br><br></br>
-                        <Text color='red'>BR Wins</Text>
+                        <Text color='red'>Loot taken by allies</Text>
                         <Divider/>
-                        36
+                        1,234
                     </CardBody>
                 <Image
-                    src='./wraith.png'
+                    src='./loba.png'
                     objectFit='cover'
                     h='500px'
                     w='50%'
