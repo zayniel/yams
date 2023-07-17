@@ -214,13 +214,7 @@ export default function Home() {
             <GridItem colStart={2} rowStart={2}>
                 <Card mt='-30px' mb='0' h='300px' variant='outline' textAlign='center' boxShadow='2xl'>
                     <CardBody>
-                    <iframe 
-                        width="100%" 
-                        height="100%" 
-                        src="https://www.youtube.com/embed/08KVJkCyBaE" 
-                        title="Yammy Collection Vol. 1" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    />
+                    
                     </CardBody>
                 </Card>
             </GridItem>
