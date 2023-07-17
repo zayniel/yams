@@ -281,7 +281,6 @@ export default function Home() {
                     overflow='hidden'
                     variant='outline'
                     boxShadow='2xl'
-                    bgImage='./thresh.png'
                     align='center'
                     maxH='300px'
                 >   

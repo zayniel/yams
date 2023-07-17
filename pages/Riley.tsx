@@ -93,6 +93,40 @@ export default function Home() {
             />
             </Center>
             <Stack mt='20px' spacing='50px'>
+            <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    minH='130px'
+                >
+                    <CardBody mt='13px' fontSize='xl' textAlign='center'>
+                        <Text color='red'>Current Rank</Text>
+                        <Divider/>
+                        Platinum 1
+                    </CardBody>
+                    <Image
+                            src='./plat.png'
+                            objectFit='cover'
+                            h='70px'
+                            w='70px'
+                            mt='28px'
+                            mr='10px'
+                        />
+                    <CardBody mt='13px' fontSize='xl' textAlign='center'>
+                        <Text color='red'>Peak Rank</Text>
+                        <Divider/>
+                        Immortal 1
+                    </CardBody>
+                    <Image
+                            src='./immo1.png'
+                            objectFit='cover'
+                            h='70px'
+                            w='70px'
+                            mt='28px'
+                            mr='20px'
+                        />
+                </Card>
                 <Card
                     direction={{base:'column', sm:'row'}}
                     overflow='hidden'
@@ -196,6 +230,40 @@ export default function Home() {
             />
             </Center>
             <Stack mt='20px' spacing='50px'>
+            <Card
+                    direction={{base:'column', sm:'row'}}
+                    overflow='hidden'
+                    variant='outline'
+                    boxShadow='2xl'
+                    minH='130px'
+                >
+                    <CardBody mt='13px' fontSize='xl' textAlign='center'>
+                        <Text color='red'>Level</Text>
+                        <Divider/>
+                        367
+                    </CardBody>
+                    <Image
+                            src='./download.svg'
+                            objectFit='cover'
+                            h='70px'
+                            w='70px'
+                            mt='28px'
+                            mr='10px'
+                        />
+                    <CardBody mt='13px' fontSize='xl' textAlign='center'>
+                        <Text color='red'>Peak Rank</Text>
+                        <Divider/>
+                        TBD
+                    </CardBody>
+                    <Image
+                            src='./unranked.png'
+                            objectFit='cover'
+                            h='70px'
+                            w='70px'
+                            mt='28px'
+                            mr='20px'
+                        />
+                </Card>
                 <Card
                     direction={{base:'column', sm:'row'}}
                     overflow='hidden'
