@@ -253,10 +253,10 @@ export default function Home() {
                     <CardBody mt='13px' fontSize='xl' textAlign='center'>
                         <Text color='red'>Peak Rank</Text>
                         <Divider/>
-                        TBD
+                        Diamond
                     </CardBody>
                     <Image
-                            src='./unranked.png'
+                            src='./apexdiamond.png'
                             objectFit='cover'
                             h='70px'
                             w='70px'
